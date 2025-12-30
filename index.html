@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nguo za Kisasa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      color: #212529;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff006e, #8338ec);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .animated-text {
+      font-size: 2em;
+      font-weight: bold;
+      animation: colorChange 3s infinite;
+    }
+
+    @keyframes colorChange {
+      0%   { color: #ff006e; }
+      25%  { color: #8338ec; }
+      50%  { color: #3a86ff; }
+      75%  { color: #06ffa5; }
+      100% { color: #ff006e; }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #212529;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="animated-text">Karibuni mupate nguo za kisasa</div>
+  </header>
+
+  <section class="gallery">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=600&q=80" alt="Nguo ya kisasa 1">
+      <h3>Nguo ya Mshono Mpya</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=600&q=80" alt="Nguo ya kisasa 2">
+      <h3>Style ya Kipekee</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506629905607-d405b7a30db8?auto=format&fit=crop&w=600&q=80" alt="Nguo ya kisasa 3">
+      <h3>Rangi za Kipekee</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80" alt="Nguo ya kisasa 4">
+      <h3>Nguo za Daktari</h3>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Nguo za Kisasa. Haki zote zimehifadhiwa.
+  </footer>
+
+</body>
+</html>
